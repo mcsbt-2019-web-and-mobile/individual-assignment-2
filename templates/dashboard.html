@@ -1,0 +1,63 @@
+<html>
+
+<head>
+    <title>my simple dashboard!</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Top 10 clients</h1>
+        <br>
+        {% for url in urls%}
+        <div>
+            <h3>site: <a href="">{{ url[1] }}</a> <span> count: <em>{{ url[0] }}</em></span></h3>
+        </div>
+        {% endfor %}
+
+        <script>
+        </script>
+        <hr>
+        <a href="/" class="btn btn-primary">back home</a>
+    </div>
+    <br>
+    <br>
+    <!-- <canvas id="bar-chart" width="800" height="450"></canvas>
+    <script>
+
+    var test = {{ urls|safe }}; 
+
+    console.log(test)
+
+        new Chart(document.getElementById("bar-chart"), {
+            type: 'bar',
+            data: {
+                labels: ['heñ'], 
+                datasets: [
+                    {
+                        label: "Population (millions)",
+                        backgroundColor: ["#3e95cd", "#8e5ea2", "#3cba9f", "#e8c3b9", "#c45850"],
+                        data: [1,2,3,4,5,6,7,8,9,10]
+                    }
+                ]
+            },
+            options: {
+                legend: { display: false },
+                title: {
+                    display: true,
+                    text: 'Top 10 visited sites'
+                }
+            }
+        });
+
+    </script> -->
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <title>my simple blog!</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    </head>
+    <body>
+        <div class="container">
+            <h1><a href="/">Client List</a></h1>
+
+            {% for url in urls%}
+            <div><a href="/url/{{url[0]}}">{{ url[0] }}</a></div>
+            {% endfor %}
+            <br>
+            <hr>
+            <br>
+            <a class="btn btn-primary" href="/register-client">register a new url</a>
+            <a class="btn btn-secondary" href="/dashboard">check dashboard</a>
+        </div>
+    </body>
+</html>

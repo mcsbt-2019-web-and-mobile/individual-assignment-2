@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <title>my simple web analytics</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    </head>
+    <body>
+        <div class="container">
+            <h1><a href="/">Register as a new client!</a></h1>
+
+            <form action="/insert_client" method="POST">
+                <div class="form-group">
+                    <label for="title">Url of site to</label>
+                    <input type="text" name="title" id="title" class="form-control">
+                </div>
+                <button type="submit" class="btn btn-primary">insert</button>
+            </form>
+
+        </div>
+    </body>
+</html>
